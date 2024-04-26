@@ -12,10 +12,10 @@ subBtn?.addEventListener("click", () => {
     localStorage.setItem('last' , arrayOfCodes)
 });
 function sortArray(arr:any, el:string) {
-  const result = arr;
-  result.unshift(el);
-  result.length > 5 ? result.splice(5, 1) : false;
-  return result;
+    const result = arr;
+    result.unshift(el);
+    result.length > 5 ? result.splice(5, 1) : false;
+    return result;
 }
 window.onload = () =>{
     if(!localStorage.getItem('last')){ return 0 }
