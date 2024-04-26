@@ -8,7 +8,6 @@ subBtn?.addEventListener("click", () => {
     code = docInp?.value;
     catImg.src = "https://http.cat/" + code;
     arrayOfCodes =  sortArray(arrayOfCodes,code);
-    console.log(arrayOfCodes)
     textId.innerText = `Последние 5 кодов ошибки которые вы загружали: ${arrayOfCodes}`
     localStorage.setItem('last' , arrayOfCodes)
 });
@@ -23,5 +22,3 @@ window.onload = () =>{
     textId.innerText = `Последние 5 кодов ошибки которые вы загружали: ${localStorage.getItem('last')}`
     arrayOfCodes = localStorage.getItem('last')?.split(',');
 }
-
-
