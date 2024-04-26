@@ -3,7 +3,7 @@ const catImg = document.getElementById("cat_img") as HTMLImageElement ;
 const docInp = document.getElementById("num")     as HTMLInputElement ;
 const textId = document.getElementById("text")    as HTMLElement      ;
 let code:string = '0', arrayOfCodes:any = [];
-//------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------
 subBtn?.addEventListener("click", () => {
     code = docInp?.value;
     catImg.src = "https://http.cat/" + code;
